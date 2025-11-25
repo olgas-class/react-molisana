@@ -21,6 +21,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .d-flex {
   display: flex;
 }

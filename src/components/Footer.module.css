@@ -1,0 +1,10 @@
+.col {
+  width: 33%;
+}
+
+.background {
+  background-image: url("../assets/img/mountains.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
