@@ -31,6 +31,10 @@ a {
   display: flex;
 }
 
+.wrap {
+  flex-wrap: wrap;
+}
+
 .justify-content-center {
   justify-content: center;
 }
@@ -46,4 +50,25 @@ a {
 .py-40 {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+/* PRODUCTS */
+.col {
+  width: calc(100% / 4);
+
+  min-height: 100px;
+  background-color: #ffffffff;
+  padding: 10px;
+}
+
+.lunga {
+  border: 2px solid blue;
+}
+
+.corta {
+  border: 2px solid green;
+}
+
+.cortissima {
+  border: 2px solid red;
 }
