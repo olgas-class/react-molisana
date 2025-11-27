@@ -40,7 +40,7 @@ export default function Footer() {
       <div className="container">
         <div className="d-flex">
           <div className={style.col}>
-            <Logo />
+            <Logo slogan="Molisana pasta sana" />
           </div>
           <div className={style.col}>
             <h3>Pastificio</h3>

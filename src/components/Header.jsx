@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <header className="text-center">
-      <Logo />
+      <Logo slogan="Molisana - pasta italiana" />
       <nav className={style.nav}>
         <ul className="d-flex justify-content-center g-20">
           {links.map((curLink, index) => (

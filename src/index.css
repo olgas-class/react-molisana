@@ -72,3 +72,32 @@ a {
 .cortissima {
   border: 2px solid red;
 }
+
+.alert {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.alert-warning {
+  border-color: rgb(202, 202, 7);
+  background-color: rgba(202, 202, 7, 0.5);
+}
+
+.alert-success {
+  border-color: rgb(18, 165, 92);
+  background-color: rgba(18, 165, 92, 0.5);
+}
+
+.alert-error {
+  border-color: rgb(165, 25, 18);
+  background-color: rgba(165, 25, 18, 0.5);
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.slogan {
+  font-style: italic;
+}

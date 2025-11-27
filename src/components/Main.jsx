@@ -1,42 +1,32 @@
 import style from "./Main.module.css";
-import { products } from "../assets/products";
+import ProductsList from "./ProductsList";
+import { products, featuredProducts } from "../assets/products";
+import Alert from "./Alert";
+import Logo from "./Logo";
+import ProductCard from "./ProductCard";
 
 export default function Main() {
   const mainClasses = `py-40 text-center ${style.background}`;
   return (
     <main className={mainClasses}>
+      <Alert type="error">
+        <h2>ERRORE</h2>
+      </Alert>
+      <Alert type="success">
+        <h2>Tutto ok</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
+          reiciendis voluptatibus, vitae quibusdam at laborum voluptate,
+          laudantium accusantium cupiditate placeat fuga possimus nam. Itaque ex
+          fugiat praesentium, quibusdam excepturi totam.
+        </p>
+      </Alert>
+
       <div className="container">
-        <h1>Nostri prodotti</h1>
+        <Logo slogan="Sponsorizzato dalla Miao corporation" />
 
         {/* Il bordo dell pa sta lunga deve essere blue, della pasta corta - verde e della pasta cortissima - rosso */}
-        <div className="d-flex wrap">
-          {products.map((curProduct) => {
-            //             let colClass = "col ";
-            //
-            //             if (curProduct.type === "lunga") {
-            //               colClass += "border-blue";
-            //             } else if (curProduct.type === "corta") {
-            //               colClass += "border-green";
-            //             } else {
-            //               colClass += "border-red";
-            //             }
-
-            // const colClass =
-            //   curProduct.type === "lunga"
-            //     ? "col border-blue"
-            //     : curProduct.type === "corta"
-            //     ? "col border-green"
-            //     : "col border-red";
-
-            return (
-              <div className={`col ${curProduct.type}`} key={curProduct.id}>
-                <img src={curProduct.src} alt={curProduct.title} />
-                <h3>{curProduct.title}</h3>
-                <p>Tipologia: {curProduct.type}</p>
-              </div>
-            );
-          })}
-        </div>
+        {products.length !== 0 ? <ProductsList /> : <Alert />}
       </div>
     </main>
   );

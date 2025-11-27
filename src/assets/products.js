@@ -18,7 +18,6 @@ const products = [
     src: "https://www.lamolisana.it/wp-content/uploads/2021/04/6-linguine.jpg",
     title: "N.6 Linguine",
     type: "lunga",
-    time: 12,
   },
   {
     id: 4,
@@ -39,7 +38,6 @@ const products = [
     src: "https://www.lamolisana.it/wp-content/uploads/2021/05/38-mezze-maniche.jpg",
     title: "N.38 Mezze maniche",
     type: "corta",
-    time: 12,
   },
   {
     id: 7,
@@ -85,4 +83,29 @@ const products = [
   },
 ];
 
-export { products };
+const featuredProducts = [
+  {
+    id: 1,
+    src: "https://www.lamolisana.it/wp-content/uploads/2021/04/1-spaghetto-quadrato.jpg",
+    title: "N.4 Spaghetto Quadrato Bucato",
+    type: "lunga",
+    time: 6,
+  },
+  {
+    id: 2,
+    src: "https://www.lamolisana.it/wp-content/uploads/2021/04/5-fettuccine.jpg",
+    title: "N.5 Fettuccine",
+    type: "lunga",
+    time: 13,
+  },
+  {
+    id: 3,
+    src: "https://www.lamolisana.it/wp-content/uploads/2021/04/6-linguine.jpg",
+    title: "N.6 Linguine",
+    type: "lunga",
+  },
+];
+
+// const products = [];
+
+export { products, featuredProducts };

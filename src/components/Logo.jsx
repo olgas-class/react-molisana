@@ -1,6 +1,6 @@
 import LogoImg from "../assets/img/logo.png";
 
-export default function Logo() {
+export default function Logo(props) {
   {
     /* Se l'immagine sta nella cartella public facciamo così: */
   }
@@ -11,6 +11,12 @@ export default function Logo() {
   {
     /* Se l'immagine sta nella cartella src/assets facciamo così */
   }
+  console.log(props);
 
-  return <img src={LogoImg} alt="" />;
+  return (
+    <div className="logo">
+      <img src={LogoImg} alt="" />
+      <p className="slogan">{props.slogan}</p>
+    </div>
+  );
 }
